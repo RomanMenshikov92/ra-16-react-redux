@@ -2,6 +2,8 @@
   "name": "hw-10",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://RomanMenshikov92.github.io/ra-16-react-redux/",
+  "repository": "https://github.com/RomanMenshikov92/ra-16-react-redux.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

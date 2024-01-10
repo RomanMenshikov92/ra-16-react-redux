@@ -1,12 +1,12 @@
 # Redux
 
-<!-- [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/1ae450f6dyukhc6k?svg=true)](https://ci.appveyor.com/project/RomanMenshikov92/ra-16-react-router)
+[![Appveyor Build status](https://ci.appveyor.com/api/projects/status/dji5s77b70aa8rji?svg=true)](https://ci.appveyor.com/project/RomanMenshikov92/ra-16-react-redux)
 
-[![Pages build status](https://github.com/RomanMenshikov92/ra-16-react-router/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RomanMenshikov92/ra-16-react-router/actions/workflows/pages/pages-build-deployment) -->
+[![Pages build status](https://github.com/RomanMenshikov92/ra-16-react-redux/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RomanMenshikov92/ra-16-react-redux/actions/workflows/pages/pages-build-deployment)
 
 ---
 
-<!-- ## [GutHub Pages](https://romanmenshikov92.github.io/ra-16-react-router/) -->
+## [GutHub Pages](https://romanmenshikov92.github.io/ra-16-react-redux/)
 
 Необходимо выполнить и предоставить на проверку следующие задачи:
 

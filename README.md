@@ -1,46 +1,106 @@
-# Getting Started with Create React App
+# Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/1ae450f6dyukhc6k?svg=true)](https://ci.appveyor.com/project/RomanMenshikov92/ra-16-react-router)
 
-## Available Scripts
+[![Pages build status](https://github.com/RomanMenshikov92/ra-16-react-router/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RomanMenshikov92/ra-16-react-router/actions/workflows/pages/pages-build-deployment) -->
 
-In the project directory, you can run:
+---
 
-### `npm start`
+<!-- ## [GutHub Pages](https://romanmenshikov92.github.io/ra-16-react-router/) -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Необходимо выполнить и предоставить на проверку следующие задачи:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<details>
+<summary>1. Редактирование</summary>
 
-### `npm test`
+# Редактирование
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Этот проект не предполагает взаимодействия по протоколу HTTP и наличия серверной части.
 
-### `npm run build`
+Взяв за основу проект, рассмотренный на лекции, доработайте его либо напишите с нуля:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. По умолчанию показывается форма добавления, при заполнении и нажатии на кнопку Save происходит добавление элемента в список:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](./res/add.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. При нажатии на кнопку «Редактировать» форма автоматически заполняется данными элемента:
 
-### `npm run eject`
+![](./res/edit.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Далее возможны два сценария:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2.1 Если пользователь нажал на кнопку Save, запись в таблице обновляется.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2.2 Если пользователь нажал на кнопку Cancel, то поля вычищаются и снова отображается форма добавления.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Бонусное задание: подумайте, как должно вести себя приложение, если вы при редактировании записи, нажмёте на «Удалить» — крестик.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+</details>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<details>
+<summary>2. Фильтрация</summary>
+
+# Фильтрация
+
+Этот проект не предполагает взаимодействия по протоколу HTTP и наличия серверной части.
+
+Взяв за основу проект, рассмотренный на лекции, или [проект редактирования](./src/components/Editing/), предложите вариант реализации возможности фильтрации: то есть у вас должно быть строковое поле, при введении данных в которое будут отображаться только объекты, у которых название содержит введённую строку.
+
+Предложите собственную реализацию этой функциональности.
+
+Обратите внимание:
+1. При пустом значении фильтра должны показываться все объекты.
+1. Неважно, заполнен фильтр или нет, все функции редактирования — добавление, обновление, удаление — должны быть доступны.
+
+Напоминаем, что фильтр — это просто текстовое поле.
+
+**Важно**: попробуйте проанализировать существующие системы на предмет того, как это реализовано у них, и на базе этого предложить собственное решение.
+
+</details>
+
+<details>
+<summary>3. Маркет (необязательная задача)</summary>
+
+# Маркет(Каталог)
+
+Этот проект не предполагает взаимодействия по протоколу HTTP и наличия серверной части.
+
+В этой задаче вы выступите в роли аналитика и проектировщика. На базе существующего сервиса вам самостоятельно необходимо спроектировать и реализовать на базе Redux форму добавления и отображения товаров. Важно: нас интересует только добавление и отображаение*.
+
+Примечание*: редактирование и удаление делать не нужно.
+
+Задача: разработайте на базе Redux форму добавления и отображения товаров как в Яндекс.Маркете.
+
+Обратите внимание: на базе примера с лекции вы должны сами выступить в роли проектировщика и решить, какие поля и в каком виде — строка, число, boolean — вы будете хранить.
+
+Задача вашего приложения — проектирование формы добавления и реализация списка для отображения:
+
+![](res/result.png)
+
+Скриншот сервиса [Яндекс.Маркет](https://market.yandex.ru/).
+
+</details>
+
+---
+
+Первые два задания лучше сдавать в одном проекте, то есть в одном create-react-app, так как второе задание продолжает идеи первого.
+
+Любые вопросы по решению задач задавайте в группе в Discord.
+
+Все три задачи лучше сдавать в разных репозиториях, то есть через create-react-app реализовать три проекта, чтобы не было конфликта стилей. Но если вы позаботитесь о том, что конфликта не будет, то можете сдавать и в одном проекте.
+
+Обратите внимание: в файлах App.js расположено несколько компонентов не потому, что так нужно делать, а чтобы вам было удобнее копировать. Будет хорошо, если в своём решении вы разнесёте их по разным файлам.
+
+#### Альтернативный способ создания приложения React с использованием тулинга Vite
+
+Приложение также можно создать используя инструмент Vite.
+Документация по созданию приложения [React](https://vitejs.dev/guide/).
+
+1. Откройте терминал и пропишите следующую команду: `yarn create vite my-app --template react`,
+   либо `yarn create vite my-app --template react-ts`, если
+   нужен шаблон с TypeScript. Эта команда создаст настроенный
+   шаблонный проект.
+2. Откройте созданный проект в своей IDE.
+3. Установите зависимости.
+4. Готово. Чтобы запустить приложение, введите команду: `yarn dev`(либо `npm run dev`).
